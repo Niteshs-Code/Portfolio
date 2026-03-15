@@ -49,7 +49,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex gap-4">
-            <button className="px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600 transition">
+            <button className="px-6 py-3 bg-blue-500 rounded-xl hover:bg-blue-600 transition" >
               View Projects
             </button>
 
