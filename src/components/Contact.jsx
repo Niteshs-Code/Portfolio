@@ -144,13 +144,13 @@ setToast({
         </span>
 
         <a
-          href="https://wa.me/918595460058"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-white text-green-500 p-2 rounded-full hover:bg-green-600 hover:text-white transition"
-        >
-          <FaWhatsapp size={25} />
-        </a>
+  href="https://wa.me/918595460058?text=Hello%20Nitesh%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-white text-green-500 p-2 rounded-full hover:bg-green-600 hover:text-white transition"
+>
+  <FaWhatsapp size={25} />
+</a>
 
       </div>
 <Toast show={toast.show} message={toast.message} />

@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,7 +15,7 @@ export default function Navbar() {
           Nitesh.dev
         </h1>
 
-        <div className="hidden md:flex gap-8 text-gray-300">
+        <div className="hidden md:flex gap-8 text-gray-300 ">
           <a href="#home" className="hover:text-white">Home</a>
           <a href="#about" className="hover:text-white">About</a>
           <a href="#projects" className="hover:text-white">Projects</a>
@@ -21,21 +23,58 @@ export default function Navbar() {
         </div>
 
         <button
-          className="md:hidden text-white"
+          className="md:hidden text-white text-2xl"
           onClick={() => setOpen(!open)}
         >
           ☰
         </button>
       </div>
 
-      {open && (
-        <div className="md:hidden bg-black border-t border-gray-800 text-center py-4 space-y-4 text-gray-300">
-          <a href="#home" className="block">Home</a>
-          <a href="#about" className="block">About</a>
-          <a href="#projects" className="block">Projects</a>
-          <a href="#contact" className="block">Contact</a>
-        </div>
-      )}
+      <AnimatePresence>
+{open && (
+  <motion.div
+    initial={{ opacity: 0, y: -20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.35 }}
+    className="md:hidden bg-black/80 backdrop-blur-xl border-t border-gray-800 text-center py-6 space-y-6 text-gray-300"
+  >
+
+    <a
+      href="#home"
+      className="block text-lg hover:text-blue-400 transition"
+      onClick={() => setOpen(false)}
+    >
+      Home
+    </a>
+
+    <a
+      href="#about"
+      className="block text-lg hover:text-blue-400 transition"
+      onClick={() => setOpen(false)}
+    >
+      About
+    </a>
+
+    <a
+      href="#projects"
+      className="block text-lg hover:text-blue-400 transition"
+      onClick={() => setOpen(false)}
+    >
+      Projects
+    </a>
+
+    <a
+      href="#contact"
+      className="block text-lg hover:text-blue-400 transition"
+      onClick={() => setOpen(false)}
+    >
+      Contact
+    </a>
+
+  </motion.div>
+)}
+</AnimatePresence>
     </nav>
   );
 }

@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress } from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress, } from "react-icons/si";
+import { TiHtml5 } from "react-icons/ti";
+import { FaJava, FaBootstrap} from "react-icons/fa6";
+
+
+
 
 export default function About() {
 
@@ -34,11 +39,25 @@ name:"Tailwind",
 icon:<SiTailwindcss/>,
 fact:"Utility first CSS framework"
 },
-
+{
+name:"HTML",
+icon: <TiHtml5/>,
+fact:"Structure and layout"
+},
 {
 name:"CSS",
 icon:"🎨",
 fact:"Styling & layout control"
+},
+{
+name:"JavaScript",
+icon: <FaJava className="text-yellow-200" />,
+fact:"Make interactive"
+}
+,{
+  name:"BootStrap",
+  icon: <FaBootstrap className="text-purple-500"/>,
+  fact:"Make website in minutes"
 }
 ]
 },
@@ -88,6 +107,11 @@ fact:"Code hosting platform"
 {
 name:"REST API",
 icon:"⚡",
+fact:"Standard API communication"
+},
+{
+name:"Vite",
+icon: <img src="/projects/vite.png"  alt="" className="w-7 h-7" />,
 fact:"Standard API communication"
 }
 ]
