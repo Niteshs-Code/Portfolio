@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollBar from "@/components/ScrollBar";
 import Skills from "@/components/Skills";
+import Pricing from "@/components/Pricing";
 
 
 
@@ -19,6 +20,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Projects/>
+       <Pricing/>
       <Contact/>
       <Footer/>
       <ScrollBar />
