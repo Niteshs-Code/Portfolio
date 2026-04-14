@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import TechOrbit from "./TechOrbit";
+import { FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -73,6 +74,18 @@ export default function Hero() {
     >
       Contact Me
     </a>
+    <motion.a
+  href="/resume.pdf"
+  download
+  whileHover={{ scale: 1.1 }}
+  whileTap={{ scale: 0.95 }}
+  className="flex items-center gap-2 px-6 py-3 rounded-xl font-semibold 
+  bg-gradient-to-r from-blue-500 to-purple-500 
+  shadow-lg hover:shadow-blue-500/40 transition"
+>
+  <FaDownload />
+  Download CV
+</motion.a>
 
   </div>
 
