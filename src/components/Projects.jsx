@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import projects from "@/data/project";
 import ProjectModal from "./ProjectModal";
+import Image from "next/image";
 
 export default function Projects() {
   const [visible, setVisible] = useState(3);
@@ -30,10 +31,13 @@ transition duration-300 cursor-pointer"
 onClick={() => setSelected(project)}
             >
 
-              <img
-                src={project.image}
-                className="w-full h-48 object-cover  border-gray-600  border"
-              />
+              <Image
+  src={project.image}
+  alt={project.title}
+  width={500}
+  height={300}
+  className="w-full h-48 object-cover border-gray-600 border"
+/>
 
               <div className="p-6">
 

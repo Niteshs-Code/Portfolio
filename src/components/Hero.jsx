@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import TechOrbit from "./TechOrbit";
 import { FaDownload } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -104,10 +105,10 @@ export default function Hero() {
           </div>
             <div className="grid grid-cols-2 gap-4 rotate-panel w-80 lg:w-180">
 
-              <img src="/projects/zento.png" className="rounded-xl" />
-              <img src="/projects/weather.png" className="rounded-xl" />
-              <img src="/projects/movie.png" className="rounded-xl" />
-              <img src="/projects/blinkit.png" className="rounded-xl" />
+              <Image src="/projects/zento.png" alt="Zento AI Chatbot" width={400} height={250} className="rounded-xl" priority />
+<Image src="/projects/weather.png" alt="Weather App" width={400} height={250} className="rounded-xl" />
+<Image src="/projects/movie.png" alt="Movie App" width={400} height={250} className="rounded-xl" />
+<Image src="/projects/blinkit.png" alt="Blinkit Clone" width={400} height={250} className="rounded-xl" />
 
             </div>
 
