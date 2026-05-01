@@ -53,9 +53,7 @@ export default function Hero() {
 
   {/* description */}
   <p className="mt-6 text-gray-400 leading-relaxed text-base sm:text-lg">
-    I build modern and scalable web applications using the MERN stack and 
-    cutting-edge technologies, focusing on performance, clean design, 
-    and real-world problem solving.
+    I am a Full Stack Developer in India specializing in Next.js, React.js, and MERN stack development. I build modern, scalable, and SEO-friendly web applications for startups and businesses.
   </p>
 
   {/* buttons */}

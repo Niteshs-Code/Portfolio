@@ -140,10 +140,11 @@ fact:"Standard API communication"
           transition={{ delay: 0.3 }}
           className="mt-6 text-gray-400 text-center max-w-3xl mx-auto"
         >
-          I'm a Full Stack Developer who builds modern web applications
-          using React, Next.js, Node.js and MongoDB. I enjoy creating
-          fast, scalable and user-friendly products.
+          I'm a Full Stack Developer in India specializing in Next.js, React, Node.js, and MongoDB. I build fast, scalable, and user-friendly web applications for startups and businesses.
         </motion.p>
+        <p className="mt-4 text-gray-400 text-center max-w-3xl mx-auto">
+  Based in India, I provide web development services including frontend, backend, and full stack solutions using modern technologies.
+</p>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16 items-start">
 
