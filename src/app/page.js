@@ -32,8 +32,11 @@ export default function Home() {
       </h2>
       {/* P Text - Text ko light gray (slate-300) kiya leading visibility ke liye */}
       <p className="mt-4 text-slate-300 text-lg">
-        I’m Nitesh, a **Full Stack Developer based in India**. I don't just write code; I build solutions. Whether you need a **Next.js SaaS platform**, a **React-based dashboard**, or a **full MERN stack application**, I ensure your project is optimized for speed, security, and search engines.
-      </p>
+  I’m Nitesh, a <strong className="font-bold text-white">Full Stack Developer based in India</strong>. 
+  I don't just write code; I build solutions. Whether you need a <strong className="text-white">Next.js SaaS platform</strong>, 
+  a <strong className="text-white">React-based dashboard</strong>, or a <strong className="text-white">full MERN stack application</strong>, 
+  I ensure your project is optimized for speed, security, and search engines.
+</p>
       {/* UL List - Text white kiya */}
       <ul className="mt-6 space-y-3 text-slate-100">
         <li className="flex items-center gap-2">✅ <strong>SEO-Friendly</strong> architecture for organic growth.</li>
