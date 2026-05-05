@@ -5,15 +5,14 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "Nitesh | Full Stack Developer in India | Next.js & React Developer",
-  description:
-    "Nitesh is a Full Stack Developer in India specializing in Next.js, React, and MERN stack. View portfolio, projects, and contact for web development services.",
+ title: "Nitesh | Expert Next.js Developer for Scalable Web Applications",
+  description: "Transforming ideas into high-performance digital products. Specialized in Next.js, React, and MERN stack. Hire a reliable Full Stack Developer in India for fast & SEO-ready websites.",
   keywords: [
-    "Full Stack Developer India",
-    "Next.js Developer",
-    "React Developer Portfolio",
-    "MERN Stack Developer",
-    "Frontend Developer India",
+    "Hire Next.js Developer India",
+    "Full Stack Freelancer for Startups",
+    "Professional MERN Stack Services",
+    "Next.js SEO Optimization Expert",
+    "Custom Web Application Development"
   ],
   other: {
     "google-site-verification": "wMNSAN6beMZxE7dUCE_UV2TpP3CSBTbSXAtmVJXleqE",
