@@ -23,54 +23,104 @@ export default function Home() {
        <Pricing/>
       <Contact/>
 
-      <section className="px-6 py-16 max-w-5xl mx-auto text-left border-b border-gray-800"> {/* Border ko dark background ke liye dark kiya */}
-  <div className="grid md:grid-cols-2 gap-10 items-center">
-    <div>
-      {/* H2 Title - Text ko white (slate-100) kiya taaki dark BG pe dikhe */}
-      <h2 className="text-3xl md:text-4xl font-bold text-slate-100 leading-tight">
-        Need a <span className="text-blue-500">Performance-Driven</span> Web Developer?
-      </h2>
-      {/* P Text - Text ko light gray (slate-300) kiya leading visibility ke liye */}
-      <p className="mt-4 text-slate-300 text-lg">
-  I’m Nitesh, a <strong className="font-bold text-white">Full Stack Developer based in India</strong>. 
-  I don't just write code; I build solutions. Whether you need a <strong className="text-white">Next.js SaaS platform</strong>, 
-  a <strong className="text-white">React-based dashboard</strong>, or a <strong className="text-white">full MERN stack application</strong>, 
-  I ensure your project is optimized for speed, security, and search engines.
-</p>
-      {/* UL List - Text white kiya */}
-      <ul className="mt-6 space-y-3 text-slate-100">
-        <li className="flex items-center gap-2">✅ <strong>SEO-Friendly</strong> architecture for organic growth.</li>
-        <li className="flex items-center gap-2">✅ <strong>API Integration</strong> & Secure Backend systems.</li>
-        <li className="flex items-center gap-2">✅ <strong>Fast Turnaround</strong> without compromising quality.</li>
-      </ul>
-    </div>
-    {/* Right Card - Iska background light hai, isliye iska text already dark dikhega */}
-    <div className="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-      <h3 className="text-xl font-bold mb-4 text-center text-black">Let's Discuss Your Project</h3>
-      <p className="text-sm text-center text-gray-500 mb-6">Free consultation for startups & businesses.</p>
-      
-      {/* Option 1: WhatsApp Link (Dono links ko side-by-side) */}
-      <div className="flex gap-4">
-        <a 
-          href="https://wa.me/918595460058?text=I'm%20interested%20in%20discussing%20a%20project%20with%20you" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="flex-1 text-center bg-green-600 text-white py-4 rounded-xl font-semibold hover:bg-green-700 transition"
-        >
-          WhatsApp Me
-        </a>
+        <section className="px-6 py-16 max-w-7xl mx-auto text-left border-b border-gray-800 bg-[#0a0a0a]">
+      <div className="grid lg:grid-cols-2 gap-12 items-center">
         
-        {/* Option 2: Direct Call Link */}
-        <a 
-          href="tel:+918595460058" 
-          className="flex-1 text-center bg-black text-white py-4 rounded-xl font-semibold hover:bg-gray-800 transition"
-        >
-          Call Me
-        </a>
+        {/* LEFT CONTENT: SEO & Conversion Focused */}
+        <div className="space-y-6">
+          <div className="inline-block px-4 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium">
+            #1 Web Development Solutions in India
+          </div>
+          
+          <h1 className="text-4xl md:text-6xl font-extrabold text-slate-100 leading-[1.1]">
+            Build a Website that <span className="text-blue-500 text-glow">Converts Visitors</span> into Customers
+          </h1>
+          
+          <p className="text-slate-400 text-lg md:text-xl max-w-xl leading-relaxed">
+            Stop losing leads to slow, outdated websites. We engineer 
+            <strong className="text-white"> high-performance digital products</strong> that are fast, secure, 
+            and built to dominate search engine rankings. From startups to enterprises, 
+            we deliver the reliability your business deserves.
+          </p>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <ul className="space-y-3 text-slate-200">
+              <li className="flex items-center gap-2">
+                <span className="text-green-500">✔</span> <strong>SEO-Dominant</strong> Architecture
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-500">✔</span> <strong>Lightning Fast</strong> Load Speed
+              </li>
+            </ul>
+            <ul className="space-y-3 text-slate-200">
+              <li className="flex items-center gap-2">
+                <span className="text-green-500">✔</span> <strong>Scalable</strong> Business Logic
+              </li>
+              <li className="flex items-center gap-2">
+                <span className="text-green-500">✔</span> <strong>24/7</strong> Reliable Support
+              </li>
+            </ul>
+          </div>
+
+          {/* Social Proof / Trust Badge */}
+          <div className="pt-4 border-t border-gray-800 flex items-center gap-4">
+            
+            <p className="text-sm text-slate-500">
+              Trusted by <span className="text-white font-bold">50+ businesses</span> worldwide
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT CONTENT: Lead Generation Card */}
+        <div className="relative">
+          {/* Decorative Blur Background */}
+          <div className="absolute -inset-4 bg-blue-500/10 blur-3xl rounded-full" />
+          
+          <div className="relative bg-white p-8 md:p-10 rounded-3xl shadow-2xl border border-gray-100">
+            <h3 className="text-2xl font-bold mb-2 text-gray-900 text-center">Ready to Scale?</h3>
+            <p className="text-gray-500 text-center mb-8">
+              Get a free consultation and project roadmap within 24 hours.
+            </p>
+            
+            <div className="space-y-4">
+              <a 
+                href="https://wa.me/918595460058?text=Hi, I'm looking for a professional web solution for my business." 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#20bd5a] transition-all transform hover:scale-[1.02] shadow-lg shadow-green-500/20"
+              >
+                <span>Start Free Consultation</span>
+              </a>
+              
+              <a 
+                href="tel:+918595460058" 
+                className="flex items-center justify-center gap-2 w-full bg-black text-white py-4 rounded-2xl font-bold text-lg hover:bg-gray-800 transition-all transform hover:scale-[1.02]"
+              >
+                Request a Quote
+              </a>
+            </div>
+
+            <div className="mt-6 flex items-center justify-center gap-6 text-gray-400">
+              <div className="text-center">
+                <p className="text-black font-bold text-xl">100%</p>
+                <p className="text-[10px] uppercase tracking-widest text-black">Secure</p>
+              </div>
+              <div className="w-[1px] h-8 bg-gray-400" />
+              <div className="text-center">
+                <p className="text-black font-bold text-xl">Fast</p>
+                <p className="text-[10px] uppercase tracking-widest text-black">Delivery</p>
+              </div>
+              <div className="w-[1px] h-8 bg-gray-400" />
+              <div className="text-center">
+                <p className="text-black font-bold text-xl">Top</p>
+                <p className="text-[10px] uppercase tracking-widest text-black">Rated</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </div>
-</section>
+    </section>
       <Footer/>
       <ScrollBar />
 

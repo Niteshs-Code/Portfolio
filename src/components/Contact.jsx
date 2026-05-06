@@ -137,7 +137,7 @@ setToast({
       </div>
 
       {/* WhatsApp Floating Button */}
-      <div className="fixed bottom-5 right-5 flex items-center justify-between bg-green-500 text-white px-5 py-3 rounded-full shadow-xl animate-bounce hover:scale-105 transition cursor-pointer">
+      <div className="fixed bottom-5 right-5 flex items-center justify-between bg-green-500 text-white px-5 py-3 rounded-full shadow-xl animate-bounce hover:scale-105 transition cursor-pointer z-10">
 
         <span className="font-semibold text-lg hidden md:block mr-2">
           Contact Us
@@ -147,7 +147,7 @@ setToast({
   href="https://wa.me/918595460058?text=Hello%20Nitesh%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
   target="_blank"
   rel="noopener noreferrer"
-  className="bg-white text-green-500 p-2 rounded-full hover:bg-green-600 hover:text-white transition"
+  className="bg-white text-green-500 p-2 rounded-full hover:bg-green-600 hover:text-white transition "
 >
   <FaWhatsapp size={25} />
 </a>
