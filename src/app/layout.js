@@ -5,17 +5,14 @@ import "./globals.css";
 
 
 export const metadata = {
- "title": "Professional Web Development Services | Custom Business Solutions & SaaS",
-  "description": "Transform your business with high-performance web solutions. We build fast, secure, and SEO-ready websites tailored for growth. From startups to enterprises, get scalable digital products that deliver results.",
-  "keywords": [
-    "Web Development Services India",
-    "Hire Full Stack Developer for Business",
-    "Custom SaaS Product Development",
-    "Professional Website Builder for Startups",
-    "Enterprise Web Applications India",
-    "Digital Transformation Expert",
-    "Affordable Web Development Agency",
-    "High Performance Business Websites"
+ title: "Studio Nitesh | Expert Next.js Developer for Scalable Web Applications",
+  description: "Transforming ideas into high-performance digital products. Specialized in Next.js, React, and MERN stack. Hire a reliable Full Stack Developer in India for fast & SEO-ready websites.",
+  keywords: [
+    "Hire Next.js Developer India",
+    "Full Stack Freelancer for Startups",
+    "Professional MERN Stack Services",
+    "Next.js SEO Optimization Expert",
+    "Custom Web Application Development"
   ],
   other: {
     "google-site-verification": "wMNSAN6beMZxE7dUCE_UV2TpP3CSBTbSXAtmVJXleqE",
