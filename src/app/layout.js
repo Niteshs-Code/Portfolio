@@ -3,17 +3,24 @@ import CursorGlow from "@/components/CursorGlow";
 
 import "./globals.css";
 
-
 export const metadata = {
- title: "Studio Nitesh | Expert Next.js Developer for Scalable Web Applications",
-  description: "Transforming ideas into high-performance digital products. Specialized in Next.js, React, and MERN stack. Hire a reliable Full Stack Developer in India for fast & SEO-ready websites.",
+  title: "Nitesh Kumar | Next.js Developer & Digital Marketing Expert",
+  description: "High-performance Full Stack Developer in India specializing in Next.js, MERN stack, Shopify, and WordPress customization. Boost your business with expert Google Ads management.",
   keywords: [
     "Hire Next.js Developer India",
     "Full Stack Freelancer for Startups",
     "Professional MERN Stack Services",
+    "Shopify Customization Expert India",
+    "WordPress Web Developer",
+    "Google Ads Freelancer India",
+    "PPC Marketing Expert India",
     "Next.js SEO Optimization Expert",
-    "Custom Web Application Development"
+    "Nitesh Kumar Portfolio"
   ],
+  alternates: {
+    // Jab tum custom domain loge tab bas ise badalna, abhi sitemap sahi se map rahega
+    canonical: "https://portfolio-omega-five-sz84sz7cb9.vercel.app", 
+  },
   other: {
     "google-site-verification": "wMNSAN6beMZxE7dUCE_UV2TpP3CSBTbSXAtmVJXleqE",
   },
@@ -22,9 +29,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="antialiased">
         <SmoothScroll>
-          <CursorGlow/>
+          <CursorGlow />
           {children}
         </SmoothScroll>
       </body>

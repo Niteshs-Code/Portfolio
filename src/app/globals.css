@@ -60,3 +60,18 @@ body {
 .rotate-panel:hover{
   transform: rotateY(0deg) rotateX(0deg) scale(1.05);
 }
+/* --- Phile se jo tumhari css hai uske niche ye add karo --- */
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Reverse directional rule ke liye */
+.animate-marquee-reverse {
+  animation: marquee 25s linear infinite reverse;
+}
