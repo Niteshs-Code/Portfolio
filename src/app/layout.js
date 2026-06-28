@@ -4,7 +4,7 @@ import CursorGlow from "@/components/CursorGlow";
 import "./globals.css";
 
 export const metadata = {
-  title: "Nitesh Kumar | Next.js Developer & Digital Marketing Expert",
+  title: "Studio Nitesh | Next.js Developer & Digital Marketing Expert",
   description: "High-performance Full Stack Developer in India specializing in Next.js, MERN stack, Shopify, and WordPress customization. Boost your business with expert Google Ads management.",
   keywords: [
     "Hire Next.js Developer India",
