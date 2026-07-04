@@ -11,6 +11,49 @@ import Pricing from "@/components/Pricing";
 
 export default function Home() {
   return (
+    <>
+<script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Nitesh Web developer",
+            "image": "https://portfolio-omega-five-sz84sz7cb9.vercel.app/og-image.jpg",
+            "telephone": "+918595460058",
+            "url": "https://portfolio-omega-five-sz84sz7cb9.vercel.app",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "S-Block, vikas valley, Hastsal",
+              "addressLocality": "New Delhi",
+              "addressRegion": "Delhi",
+              "postalCode": "110059",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "28.647292078766085",
+              "longitude": "77.04603118201756"
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          }),
+        }}
+      />
+
     <main className="bg-black text-white min-h-screen">
       
       <Navbar/>
@@ -71,5 +114,6 @@ export default function Home() {
       <ScrollBar />
 
     </main>
+    </>
   );
 }
