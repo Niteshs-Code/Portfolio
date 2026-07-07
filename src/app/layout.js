@@ -4,6 +4,7 @@ import CursorGlow from "@/components/CursorGlow";
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://portfolio-omega-five-sz84sz7cb9.vercel.app"),
   title: "Studio Nitesh | Next.js Developer & Digital Marketing Expert",
   description: "High-performance Full Stack Developer in India specializing in Next.js, MERN stack, Shopify, and WordPress customization. Boost your business with expert Google Ads management.",
   keywords: [
@@ -30,7 +31,7 @@ export const metadata = {
     siteName: "Studio Nitesh",
     images: [
       {
-        url: "https://portfolio-omega-five-sz84sz7cb9.vercel.app/projects/og-image.jpg", // Aapki image ka absolute URL
+        url: "https://portfolio-omega-five-sz84sz7cb9.vercel.app/og-image.jpg", // Aapki image ka absolute URL
         width: 1200,
         height: 630,
         alt: "Studio Nitesh Portfolio Thumbnail",
@@ -45,7 +46,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Studio Nitesh | Next.js Developer & Digital Marketing Expert",
     description: "High-performance Full Stack Developer in India specializing in Next.js, MERN stack, Shopify, and WordPress customization.",
-    images: ["https://portfolio-omega-five-sz84sz7cb9.vercel.app/projects/og-image.jpg"],
+    images: ["https://portfolio-omega-five-sz84sz7cb9.vercel.app/og-image.jpg"],
   },
 
   other: {
