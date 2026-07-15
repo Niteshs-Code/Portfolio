@@ -8,6 +8,8 @@ import ScrollBar from "@/components/ScrollBar";
 import Skills from "@/components/Skills";
 import ProjectGallery from "@/components/ProjectGallery";
 import Pricing from "@/components/Pricing";
+import Collaborate from "@/components/Collaborate";
+import BlogPreview from "@/components/BlogPreview";
 
 export default function Home() {
   return (
@@ -63,6 +65,9 @@ export default function Home() {
       <Projects/>
       <Pricing/>
       <ProjectGallery />
+       <Collaborate />
+       <BlogPreview />
+
       <Contact/>
 
       {/* Polish Call To Action Section - Completely Dark Styled */}
