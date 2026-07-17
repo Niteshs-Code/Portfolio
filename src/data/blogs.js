@@ -4,7 +4,9 @@ export const blogCategories = [
   "Finance & Money",
   "Health & Fitness",
   "Shopping & Reviews",
-  "News & Trending"
+  "News & Trending",
+  "Others"
+
 ];
 
 export const blogsData = [
@@ -282,6 +284,112 @@ USING (auth.uid() = user_id);`
       }
     ]
   },
+  {
+  slug: "running-llms-locally-webgpu-transformers-js-2026",
+  category: "Tech & AI",
+  title: "Zero-Server AI: Executing Large Language Models Directly in Browser via WebGPU",
+  excerpt: "A deep dive into client-side machine learning, memory pooling, and optimizing ONNX runtimes to eliminate cloud inference costs completely.",
+  date: "July 17, 2026",
+  readTime: "9 min read",
+  isFeatured: false,
+  author: {
+    name: "Kabir Mehta",
+    role: "Edge Compute Pioneer",
+    avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80"
+  },
+  coverImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&auto=format&fit=crop&q=80",
+  ogImage: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=1200&auto=format&fit=crop&q=80",
+  seo: {
+    title: "In-Browser LLMs with WebGPU and Transformers.js",
+    description: "Technical guide on deploying localized neural networks, WebGPU matrix allocations, and client-side optimization frameworks.",
+    keywords: ["WebGPU", "Transformers.js", "Edge AI", "Client Side ML", "ONNX Runtime"]
+  },
+  toc: [
+    { id: "edge-revolution", title: "The Death of API Latency: Moving to the Client" },
+    { id: "webgpu-vs-webgl", title: "1. WebGPU vs WebGL: Direct Hardware Access" },
+    { id: "model-sharding", title: "2. Model Sharding and ONNX Quantization Layers" },
+    { id: "pipeline-setup", title: "3. Compiling the Client-Side Execution Pipeline" },
+    { id: "ux-tradeoffs", title: "Privacy, Offline Capabilities, and UX Tradeoffs" }
+  ],
+  contentSections: [
+    {
+      id: "edge-revolution",
+      type: "paragraph",
+      text: "For years, deploying production AI meant scaling massive cloud clusters and paying exorbitant monthly API bills. However, modern browser architectures have unlocked direct hardware-level compute access for web applications. By shifting the execution layer from centralized cloud servers directly to the end-user's local GPU, engineering teams can now deliver hyper-fast, private, and zero-cost inference pipelines for millions of concurrent users simultaneously."
+    },
+    {
+      type: "paragraph",
+      text: "The primary paradigm shift lies in state management. Instead of streaming inputs across volatile network sockets, data stays strictly contained within the user's local memory bounds, eliminating data-compliance friction and reducing round-trip latency to absolute zero."
+    },
+    {
+      id: "webgpu-vs-webgl",
+      type: "heading",
+      heading: "1. WebGPU vs WebGL: Direct Hardware Access"
+    },
+    {
+      type: "paragraph",
+      text: "Unlike older WebGL frameworks that forced developers to hack compute logic inside graphics fragment shaders, WebGPU interfaces natively with modern system APIs like Vulkan, Metal, and Direct3D 12. This introduces dedicated compute pipelines, allowing complex matrix multiplication loops to execute asynchronously without blocking or locking the main browser UI thread."
+    },
+    {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=1000&auto=format&fit=crop&q=80",
+      caption: "High-throughput local graphics pipeline rendering complex matrix shards in real time."
+    },
+    {
+      type: "paragraph",
+      text: "This low-level integration ensures that neural network execution scales linearly with the user's hardware tier, turning high-end consumer machines into localized inference engines capable of processing complex semantic structures on the fly."
+    },
+    {
+      id: "model-sharding",
+      type: "heading",
+      heading: "2. Model Sharding and ONNX Quantization Layers"
+    },
+    {
+      type: "paragraph",
+      text: "The bottleneck of client-side AI isn't raw processor speed—it's network delivery size. Downloading a raw 3GB model on every initial page load is completely impractical. To solve this, developers leverage advanced ONNX runtime structures to compress models into highly precise 4-bit and 8-bit quantized weights, drastically squeezing the bundle sizes down to sub-hundred megabytes."
+    },
+    {
+      id: "pipeline-setup",
+      type: "heading",
+      heading: "3. Compiling the Client-Side Execution Pipeline"
+    },
+    {
+      type: "paragraph",
+      text: "Setting up the framework requires spinning up dedicated web workers to handle model retrieval, memory cache pooling, and streaming token distributions securely outside the application's primary processing space."
+    },
+    {
+      type: "code",
+      code: `// Initializing Local WebGPU Model Stream Layer
+import { pipeline, env } from '@xenova/transformers-edge';
+
+env.allowLocalModels = false;
+env.backends.webgpu.enabled = true;
+
+async function bootLocalizedPipeline() {
+  const textGenerator = await pipeline('text-generation', 'Xenova/Qwen1.5-0.5B-Chat', {
+    device: 'webgpu',
+    dtype: 'fp32',
+    progress_callback: (info) => console.log(\`Loading Asset Chunk: \${info.progress}%\`)
+  });
+
+  const output = await textGenerator("Analyze vector database shards:", {
+    max_new_tokens: 128,
+    temperature: 0.7
+  });
+  return output;
+}`
+    },
+    {
+      id: "ux-tradeoffs",
+      type: "heading",
+      heading: "Privacy, Offline Capabilities, and UX Tradeoffs"
+    },
+    {
+      type: "paragraph",
+      text: "While client-side execution solves the cost equation, it introduces a unique UX challenge: the first-load download penalty. To mitigate this friction, modern web platforms utilize aggressive Cache Storage APIs to persist model weights across sessions, allowing applications to function entirely offline after the initial cold-boot sequence is finalized."
+    }
+  ]
+},
 
   // 2. Finance & Money
   {
@@ -688,9 +796,6 @@ USING (auth.uid() = user_id);`
     }
   ]
 },
-
-
-
 
 
   // 4. Shopping & Reviews
@@ -1228,5 +1333,113 @@ USING (auth.uid() = user_id);`
       }
     ]
   },
+
+
+
+
+
+
+
+// other cateogoary blogs
+  {
+  slug: "mastering-nonverbal-communication-job-interviews-2026",
+  category: "Others",
+  title: "The Silent Edge: Mastering Nonverbal Communication in High-Stakes Job Interviews",
+  excerpt: "How to use structural posture, micro-expressions, eye-distribution arrays, and vocal paralanguage to project authority before you say a single word.",
+  date: "July 17, 2026",
+  readTime: "12 min read",
+  isFeatured: true,
+  author: {
+    name: "Vinod Joshi",
+    role: "Lead Technical Recruiter & Career Strategist",
+    avatar: "https://res.cloudinary.com/uqhkx4jn/image/upload/f_auto,q_auto/Screenshot_2026-07-17_132012_fd06kc"
+  },
+  coverImage: "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?w=1200&auto=format&fit=crop&q=80",
+  ogImage: "https://images.unsplash.com/photo-1686771416282-3888ddaf249b?w=1200&auto=format&fit=crop&q=80",
+  seo: {
+    title: "How to Master Nonverbal Communication in Job Interviews",
+    description: "Deep-dive guide on interview body language, eye contact rules, open palm gestures, and vocal pacing to pass elite corporate rounds.",
+    keywords: ["Job Interview Tips", "Body Language", "Nonverbal Communication", "Interview Confidence", "Career Growth"]
+  },
+  toc: [
+    { id: "first-impression-matrix", title: "The 7-Second First Impression Matrix" },
+    { id: "pillars-of-body-language", title: "1. Core Pillars of Interview Body Language" },
+    { id: "micro-expressions", title: "2. Decoding Micro-Expressions & The Handshake Protocol" },
+    { id: "vocal-paralanguage", title: "3. Vocal Paralanguage: The Auditory Subtext" },
+    { id: "red-flags-to-avoid", title: "4. Behavioral Red Flags to Eliminate Immediately" }
+  ],
+  contentSections: [
+    {
+      id: "first-impression-matrix",
+      type: "paragraph",
+      text: "When preparing for a job interview, candidates routinely spend hours rehearsing answers to behavioral questions and memorizing project metrics. However, behavioral psychology reveals that over 55% of face-to-face communication is processed nonverbally. Long before you describe your core architecture choices or management style, the interviewer’s subconscious brain has already completed an initial profile assessment of your competence and confidence. This thin-slicing phenomenon happens within the first 7 seconds of physical or visual contact."
+    },
+    {
+      type: "paragraph",
+      text: "The entrance loop sets the entire baseline. When you walk into the interview bay, your walking speed, physical carriage, and how you manage your immediate spatial surroundings tell a vivid story. Rushing through the door signals high anxiety and cortisol spikes, while an overly relaxed slump implies an unprofessional lack of investment. To trigger a positive bias, candidates must treat the entry sequence as an active deployment phase—pausing slightly at the threshold to optimize alignment before moving toward the target interface."
+    },
+    {
+      id: "pillars-of-body-language",
+      type: "heading",
+      heading: "1. Core Pillars of Interview Body Language"
+    },
+    {
+      type: "paragraph",
+      text: "To command the room effectively, implement the Seated Axial Alignment: slide your hips back until they meet the rear support of the chair and lean forward by exactly 5 to 10 degrees toward the interviewer. This minor spatial modification projects active cognitive engagement and analytical focus without appearing aggressively heavy. Leaning too far back indicates a dismissive, overly casual posture, while leaning too far forward can be perceived as invasive or desperate for validation."
+    },
+    {
+      type: "image",
+      url: "https://plus.unsplash.com/premium_photo-1723780861983-d7d808235199?w=1000&auto=format&fit=crop&q=80",
+      caption: "Maintaining optimal open posture and structural eye contact during a professional evaluation round."
+    },
+    {
+      type: "paragraph",
+      text: "Simultaneously, adopt the 60/40 Equilibrium Rule for eye contact: maintain deliberate visual connection for roughly 60% of the active transaction cycle, allowing brief natural processing drift (40%) when formulating complex logic. When presented with an interview panel, execute the Anchor-and-Scan Array Technique: direct 70% of your visual focus to the panelist who initiated the question, while scanning the remaining members for the other 30% of your delivery timeline to maintain collective alignment and investment."
+    },
+    {
+      type: "paragraph",
+      text: "Proxemics and hand visibility are equally critical. Keep your hands visible above the desk plane at all times—hidden hands trigger a primitive subconscious evolutionary response indicating hidden intent or defensive withholding. Utilizing open-palm hand gestures at a controlled chest-height level structurally conveys transparency, honesty, and mental clarity, which serves to anchor your verbal arguments during tense system design or leadership reviews."
+    },
+    {
+      id: "micro-expressions",
+      type: "heading",
+      heading: "2. Decoding Micro-Expressions & The Handshake Protocol"
+    },
+    {
+      type: "paragraph",
+      text: "Micro-expressions are fleeting, involuntary facial configurations that leak true emotional states before the conscious mind can mask them. Interviewers are highly trained to spot the discrepancy between a confident verbal response and a tense micro-expression. The most common point of failure is the fake or forced smile, which only activates the zygomatic major muscles around the mouth. A genuine, trust-building smile—the Duchenne smile—requires the involuntary contraction of the orbicularis oculi muscles, crinkling the corners of the eyes and immediately signaling authentic warmth and psychological safety."
+    },
+    {
+      type: "paragraph",
+      text: "If physical greetings are part of the setting, the handshake serves as your primary tactile handshake configuration. A weak, passive grip indicates low situational authority and high submissiveness, while an overbearing, downward-forcing palm signals aggressive dominance. The optimized protocol demands a vertical, web-to-web connection where the space between your thumb and index finger firmly meets theirs. Apply uniform pressure matching the interviewer’s grip intensity, execute exactly two controlled vertical pulses, and cleanly break contact while maintaining steady eye tracking."
+    },
+    {
+      id: "vocal-paralanguage",
+      type: "heading",
+      heading: "3. Vocal Paralanguage: The Auditory Subtext"
+    },
+    {
+      type: "paragraph",
+      text: "Nonverbal execution extends heavily into how your vocal cords process verbal outputs. Under situational pressure, the human chest tightens, accelerating speech patterns and raising pitch frequencies. This rapid-fire delivery signals panic. To counteract this operational drift, implement Diaphragmatic Pacing. Before speaking, anchor your breath in your core rather than your upper chest. This naturally stabilizes your pacing to an authoritative 130–150 words per minute."
+    },
+    {
+      type: "paragraph",
+      text: "Pay extreme attention to vocal inflections at the tail end of your assertions. Ensure your sentences terminate with a downward vocal inflection rather than a rising tone. A rising tone—often called uptalking—inadvertently transforms declarative expertise into speculative questions. This minor phonetic error completely undermines your technical authority, making even perfectly accurate system designs sound tentative and unverified to an expert panel."
+    },
+    {
+      id: "red-flags-to-avoid",
+      type: "heading",
+      heading: "4. Behavioral Red Flags to Eliminate Immediately"
+    },
+    {
+      type: "paragraph",
+      text: "Micro-fidget leaks—such as continuous pen clicking, ring rotation, cuticle picking, or rapid foot tapping—create constant physical noise that breaks the interviewer's focus. These behaviors function as external self-soothing mechanisms, instantly telegraphing to the panel that the internal stress load has breached the candidate's threshold of comfort. Keep your core still, channeling your physical energy solely into intentional, controlled hand gestures."
+    },
+    {
+      type: "paragraph",
+      text: "Additionally, avoid the Closed Torso Loop. Tightly crossing arms across your chest or clamping your elbows inward forms a literal defensive barricade that reads as uncooperative, stubborn, or highly resistant to critical feedback. If a difficult technical challenge or architectural critique is introduced, breaking your gaze to look straight down at the floor signals immediate mental defeat. Instead, maintain lateral eye tracking or look slightly to the side to signal active, resilient analytical processing."
+    }
+  ]
+},
 
 ];
