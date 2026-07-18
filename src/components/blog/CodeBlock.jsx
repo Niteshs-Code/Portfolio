@@ -19,7 +19,7 @@ export default function CodeBlock({ code, isDark }) {
           onClick={handleCopy}
           className="hover:text-white transition-colors text-xs font-medium flex items-center gap-1"
         >
-          {copied ? "✓ Copied!" : "📋 Copy"}
+          {copied ? "✓ Copied!" : " Copy"}
         </button>
       </div>
 

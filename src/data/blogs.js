@@ -141,7 +141,7 @@ await codeAgent.executeGoal("Refactor user auth to support OAuth2 without downti
       },
       {
         type: "image",
-        url: "https://images.unsplash.com/premium_photo-1683120966127-14162cdd0935?w=1000&auto=format&fit=crop&q=80",
+        url: "https://plus.unsplash.com/premium_photo-1685086785054-d047cdc0e525?w=1000&auto=format&fit=crop&q=80",
         caption: "High-level visual architecture of vector embeddings stored in specialized databases"
       },
       {

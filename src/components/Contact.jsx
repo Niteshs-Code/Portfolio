@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaWhatsapp, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 import { useState, useEffect, useRef } from "react";
 import Toast from "@/components/Toast";
 
@@ -106,42 +106,67 @@ export default function Contact() {
         </div>
 
         {/* Layout Splitting */}
-        <div className="grid md:grid-cols-5 gap-10 items-start mt-12">
+        <div className="grid md:grid-cols-5 gap-10 items-start mt-12 ">
           
           {/* Left Panel: Clean Personal Channels */}
-          <div className="md:col-span-2 space-y-4 order-2 md:order-1">
-            <div className="p-6 bg-gradient-to-b from-gray-900/50 to-black border border-gray-800/60 rounded-2xl">
-              <h3 className="text-lg font-semibold mb-4 text-gray-200">Direct Channels</h3>
-              <div className="space-y-4">
-                <a 
-  href="https://instagram.com/nitesh_dev24/" // Yahan apna real Instagram username daal dena
-  target="_blank"
-  rel="noopener noreferrer"
-  className="flex items-center gap-4 text-sm text-gray-400 hover:text-pink-500 transition group"
->
-  <div className="p-3 bg-gray-900 border border-gray-800 rounded-xl group-hover:scale-105 transition text-pink-500">
-    <FaInstagram size={18} />
-  </div>
-  @ Connect on Insta
-</a>
-                <a 
-                  href="https://facebook.com/profile.php?id=61591270509518/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 text-sm text-gray-400 hover:text-blue-400 transition group"
-                >
-                  <div className="p-3 bg-gray-900 border border-gray-800 rounded-xl group-hover:scale-105 transition text-blue-600"><FaFacebook size={18} /></div>
-                  Connect on Facebook
-                </a>
-              </div>
-            </div>
+          <div className="md:col-span-2 space-y-6 order-2 md:order-1">
+  {/* Direct Channels Card */}
+  <div className="p-6 bg-gradient-to-b from-gray-900/40 via-gray-900/20 to-black border border-gray-800/80 rounded-2xl shadow-xl backdrop-blur-sm">
+    <h3 className="text-sm font-semibold uppercase tracking-wider mb-5 text-gray-400">
+      Direct Channels
+    </h3>
+    
+    <div className="grid gap-3">
+      {/* Twitter / X */}
+      <a 
+        href="https://x.com/nitesh_dev24" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="flex items-center gap-4 p-2 rounded-xl text-sm text-gray-400 hover:text-white hover:bg-gray-900/50 transition-all duration-300 group"
+      >
+        <div className="p-3 bg-gray-900/80 border border-gray-800 rounded-xl group-hover:scale-105 group-hover:border-gray-700 transition-all text-white">
+          <FaTwitter size={18} /> {/* Note: Agar FaXTwitter icon available ho react-icons me, toh wo use kar sakte ho */}
+        </div>
+        <span className="font-medium group-hover:translate-x-1 transition-transform">Connect on X / Twitter</span>
+      </a>
 
-            <div className="p-6 bg-gradient-to-b from-gray-900/50 to-black border border-gray-800/60 rounded-2xl">
-              <p className="text-xs text-gray-500 leading-relaxed">
-                📌 **Response Time:** I usually respond within 12-24 hours. For urgent project discussions, feel free to use the instant chat button down below.
-              </p>
-            </div>
-          </div>
+      {/* Instagram */}
+      <a 
+        href="https://instagram.com/nitesh_dev24/" 
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-4 p-2 rounded-xl text-sm text-gray-400 hover:text-pink-500 hover:bg-gray-900/50 transition-all duration-300 group"
+      >
+        <div className="p-3 bg-gray-900/80 border border-gray-800 rounded-xl group-hover:scale-105 group-hover:border-gray-700 transition-all text-pink-500">
+          <FaInstagram size={18} />
+        </div>
+        <span className="font-medium group-hover:translate-x-1 transition-transform">Connect on Instagram</span>
+      </a>
+
+      {/* Facebook */}
+      <a 
+        href="https://facebook.com/profile.php?id=61591270509518/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="flex items-center gap-4 p-2 rounded-xl text-sm text-gray-400 hover:text-blue-400 hover:bg-gray-900/50 transition-all duration-300 group"
+      >
+        <div className="p-3 bg-gray-900/80 border border-gray-800 rounded-xl group-hover:scale-105 group-hover:border-gray-700 transition-all text-blue-500">
+          <FaFacebook size={18} />
+        </div>
+        <span className="font-medium group-hover:translate-x-1 transition-transform">Connect on Facebook</span>
+      </a>
+    </div>
+  </div>
+
+  {/* Response Time Info Card */}
+  <div className="p-5 bg-gradient-to-r from-gray-900/30 to-transparent border border-gray-800/60 rounded-2xl flex items-start gap-3">
+    <span className="text-base mt-0.5">📌</span>
+    <p className="text-xs text-gray-500 leading-relaxed">
+      <strong className="text-gray-400 block mb-1 font-medium">Response Time:</strong> 
+      I usually respond within 12-24 hours. For urgent project discussions, feel free to use the instant chat button down below.
+    </p>
+  </div>
+</div>
 
           {/* Right Panel: Clean Professional Form */}
           <motion.form
