@@ -1218,64 +1218,77 @@ async function bootLocalizedPipeline() {
     ]
   },
 
-  // 4. New Personal Tax Slabs & Freelance Compliance
   {
-    slug: "new-income-tax-slabs-and-freelance-rules-2026",
-    category: "News & Trending",
-    title: "New Tax Slabs & Digital Asset Filing Rules: What Salaried & Freelance Professionals Must Know",
-    excerpt: "Key updates on revised personal income tax brackets, streamlined IT filing processes, and compliance rules for remote workers.",
-    date: "July 03, 2026",
-    readTime: "7 min read",
-    isFeatured: false,
-    author: {
-      name: "Meera Nair",
-      role: "Financial Policy & Tax Consultant",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80"
-    },
-    coverImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&auto=format&fit=crop&q=80",
-    ogImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1200&auto=format&fit=crop&q=80",
-    seo: {
-      title: "Income Tax Slabs & Remote Work Filing Rules 2026",
-      description: "Understanding tax deduction updates, revised slabs, and cross-border income compliance for freelancers and employees.",
-      keywords: ["Income Tax", "Tax Slabs", "Freelance Tax", "Financial News", "Tax Compliance"]
-    },
-    toc: [
-      { id: "tax-updates", title: "Summary of Tax Framework Changes" },
-      { id: "salaried-slabs", title: "1. Revised Income Tax Structure" },
-      { id: "remote-workers", title: "2. Rules for Remote & Foreign Income" }
-    ],
-    contentSections: [
-      {
-        id: "tax-updates",
-        type: "paragraph",
-        text: "Tax regulatory bodies have implemented streamlined direct tax guidelines aimed at simplifying compliance for individual taxpayers, remote contractors, and digital economy professionals. The changes provide relief to middle-income earners while closing loopholes on foreign remitted income."
-      },
-      {
-        id: "salaried-slabs",
-        type: "heading",
-        heading: "1. Revised Income Tax Structure"
-      },
-      {
-        type: "paragraph",
-        text: "The default simplified tax regime now offers higher basic exemption limits and expanded rebate thresholds. Standard deductions for salaried individuals have been increased, lowering overall effective tax liabilities across middle-tier earning brackets."
-      },
-      {
-        type: "image",
-        url: "https://plus.unsplash.com/premium_photo-1679923906285-386991e8d862?w=1000&auto=format&fit=crop&q=80",
-        caption: "Digital tax filing platforms simplifying income reporting for independent workers"
-      },
-      {
-        id: "remote-workers",
-        type: "heading",
-        heading: "2. Rules for Remote & Foreign Income"
-      },
-      {
-        type: "paragraph",
-        text: "Freelancers earning foreign exchange from overseas clients must ensure proper digital reporting and invoice reconciliation. Presumptive tax frameworks offer lower audit burdens for qualifying software developers and consultants whose turnover remains under established thresholds."
-      }
-    ]
+  slug: "jantar-mantar-protests-anti-paper-leak-law-reforms-2026",
+  category: "News & Trending",
+  title: "Inside the Jantar Mantar Agitation: National Youth Protests & The Push for Examination Transparency",
+  excerpt: "An in-depth analysis of the ongoing student demonstrations in New Delhi, the legal framework of the Anti-Paper Leak Act, and systemic reforms shaping national testing bodies.",
+  date: "July 22, 2026",
+  readTime: "8 min read",
+  isFeatured: true,
+  author: {
+    name: "Sheetal",
+    role: "Policy & Civil Affairs Analyst",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
   },
-
+  coverImage: "https://plus.unsplash.com/premium_photo-1697730309688-cc2a3a573494?w=1200&auto=format&fit=crop&q=80",
+  ogImage: "https://plus.unsplash.com/premium_photo-1697730309688-cc2a3a573494?w=1200&auto=format&fit=crop&q=80",
+  seo: {
+    title: "Jantar Mantar Student Protests & Exam Reform Laws 2026",
+    description: "Detailed report on Delhi's student demonstrations, testing agency accountability, strict penalties under new public examination laws, and key demands.",
+    keywords: ["Jantar Mantar Protest", "Paper Leak Reforms", "Exam Transparency", "Public Examination Act", "Youth Agitation", "National News"]
+  },
+  toc: [
+    { id: "ground-reality", title: "The Ground Reality at Jantar Mantar" },
+    { id: "core-demands", title: "1. Core Demands: SOPs & Institutional Accountability" },
+    { id: "legal-framework", title: "2. The Legal Hammer: Strict Anti-Paper Leak Mandates" },
+    { id: "road-ahead", title: "3. Rebuilding Trust in National Competitive Examinations" }
+  ],
+  contentSections: [
+    {
+      id: "ground-reality",
+      type: "paragraph",
+      text: "New Delhi's historic demonstration site at Jantar Mantar has once again become the focal point of intense civic engagement. Thousands of aspirants, youth representatives, and educational advocates have assembled to demand absolute structural transparency in competitive national examinations. The ongoing gatherings highlight growing concerns over paper leaks, last-minute center re-allocations, and technical glitches in computer-based testing networks."
+    },
+    {
+      type: "paragraph",
+      text: "While civil protests at Jantar Mantar historically span various socio-economic issues, the current wave focuses heavily on student welfare, career security, and institutional integrity within centralized testing authorities."
+    },
+    {
+      id: "core-demands",
+      type: "heading",
+      heading: "1. Core Demands: SOPs & Institutional Accountability"
+    },
+    {
+      type: "paragraph",
+      text: "At the heart of the agitation are three distinct policy demands: standardizing emergency protocols during technical disruptions, establishing independent third-party audit committees for examination centers, and implementing real-time grievance redressal frameworks during national test cycles."
+    },
+    {
+      type: "image",
+      url: "https://images.unsplash.com/photo-1511898634545-c01af8a54dd5?w=1000&auto=format&fit=crop&q=80",
+      caption: "Students and youth organizations gathering to discuss policy frameworks and academic integrity reforms"
+    },
+    {
+      id: "legal-framework",
+      type: "heading",
+      heading: "2. The Legal Hammer: Strict Anti-Paper Leak Mandates"
+    },
+    {
+      type: "paragraph",
+      text: "In response to growing public discourse, enforcement mechanisms under public examination protection frameworks have been significantly tightened. Key provisions introduce stringent non-bailable penalties, high financial fines for organized cheating syndicates, and mandatory blacklisting of compromised exam hosting centers."
+    },
+    {
+      id: "road-ahead",
+      type: "heading",
+      heading: "3. Rebuilding Trust in National Competitive Examinations"
+    },
+    {
+      type: "paragraph",
+      text: "Restoring public confidence in large-scale recruitment and admission tests requires a multi-faceted approach. Beyond legal deterrents, experts advocate for end-to-end cryptographic encryption of question banks, randomized biometric verification systems, and decentralized local monitoring teams to ensure every candidate receives an equitable testing environment."
+    }
+  ]
+}
+,
   // 5. Green Energy & Critical Minerals Supply Shift
   {
     slug: "global-green-energy-and-battery-mineral-policy-2026",
