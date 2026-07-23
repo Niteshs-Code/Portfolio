@@ -9,6 +9,7 @@ import ConfettiReward from "@/components/blog/ConfettiReward";
 import ShareButtons from "@/components/blog/ShareButtons";
 import RelatedArticles from "@/components/blog/RelatedArticles";
 import CodeBlock from "@/components/blog/CodeBlock";
+import GoogleTranslator from "@/components/blog/GoogleTranslater";
 
 export default function SingleBlogPage({ params }) {
   const [isDark, setIsDark] = useState(true);
@@ -63,9 +64,11 @@ export default function SingleBlogPage({ params }) {
           >
             <span>←</span> All Articles
           </Link>
+
+          <GoogleTranslator />
           <button
             onClick={toggleTheme}
-            className={`px-3 py-1 rounded-full text-xs font-semibold border transition-all active:scale-95 ${
+            className={`px-4 py-2 rounded-md text-[14px] font-semibold border transition-all active:scale-95 ${
               isDark
                 ? "bg-zinc-800 border-zinc-700 text-zinc-200 hover:bg-zinc-700"
                 : "bg-zinc-100 border-zinc-300 text-zinc-800 hover:bg-zinc-200"

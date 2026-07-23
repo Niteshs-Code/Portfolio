@@ -95,7 +95,7 @@ export default function BlogsHub() {
       {/* Background Glow */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden z-0">
         <div
-          className={`absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[350px] rounded-full blur-[130px] opacity-25 transition-all duration-700 ${
+          className={`absolute -top-32 left-1/2 -translate-x-1/2 w-[500px] sm:w-[700px] h-[350px]  blur-[130px] opacity-25 transition-all duration-700 ${
             isDark ? "bg-blue-600" : "bg-blue-400"
           }`}
         />
@@ -121,7 +121,7 @@ export default function BlogsHub() {
 
           <button
             onClick={toggleTheme}
-            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all duration-200 active:scale-95 ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-md text-[14px] font-semibold border transition-all duration-200 active:scale-95 ${
               isDark
                 ? "bg-zinc-900/90 border-zinc-800 text-zinc-300 hover:bg-zinc-800 hover:text-white"
                 : "bg-zinc-100 border-zinc-300 text-zinc-700 hover:bg-zinc-200 hover:text-black"
