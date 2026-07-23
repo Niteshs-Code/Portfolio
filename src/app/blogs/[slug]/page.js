@@ -53,31 +53,34 @@ export default function SingleBlogPage({ params }) {
 
       {/* Navbar */}
       <header
-        className={`sticky top-0 z-40 backdrop-blur-md border-b transition-colors ${
-          isDark ? "bg-[#09090b]/80 border-zinc-800" : "bg-white/80 border-zinc-200"
+  className={`sticky top-0 z-40 backdrop-blur-md border-b transition-colors ${
+    isDark ? "bg-[#09090b]/80 border-zinc-800" : "bg-white/80 border-zinc-200"
+  }`}
+>
+  <div className="max-w-5xl mx-auto px-3 sm:px-6 h-14 sm:h-16 flex items-center justify-between gap-2 sm:gap-4">
+    <Link
+      href="/blogs"
+      className="text-xs sm:text-sm font-medium text-blue-500 hover:underline flex items-center gap-1 shrink-0"
+    >
+      <span>←</span> <span className="hidden xs:inline">All Articles</span><span className="xs:hidden">Back</span>
+    </Link>
+
+    <div className="flex items-center gap-2">
+      <GoogleTranslator />
+      
+      <button
+        onClick={toggleTheme}
+        className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-md text-xs sm:text-[14px] font-semibold border transition-all active:scale-95 shrink-0 ${
+          isDark
+            ? "bg-zinc-800 border-zinc-700 text-zinc-200 hover:bg-zinc-700"
+            : "bg-zinc-100 border-zinc-300 text-zinc-800 hover:bg-zinc-200"
         }`}
       >
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 sm:h-16 flex items-center justify-between">
-          <Link
-            href="/blogs"
-            className="text-xs sm:text-sm font-medium text-blue-500 hover:underline flex items-center gap-1"
-          >
-            <span>←</span> All Articles
-          </Link>
-
-          <GoogleTranslator />
-          <button
-            onClick={toggleTheme}
-            className={`px-4 py-2 rounded-md text-[14px] font-semibold border transition-all active:scale-95 ${
-              isDark
-                ? "bg-zinc-800 border-zinc-700 text-zinc-200 hover:bg-zinc-700"
-                : "bg-zinc-100 border-zinc-300 text-zinc-800 hover:bg-zinc-200"
-            }`}
-          >
-            {isDark ? " Light" : " Dark"}
-          </button>
-        </div>
-      </header>
+        {isDark ? "Light" : "Dark"}
+      </button>
+    </div>
+  </div>
+</header>
 
       {/* Article Container */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 sm:pt-12 pb-16 min-w-0">
