@@ -1024,6 +1024,72 @@ async function bootLocalizedPipeline() {
 
   // 5. News & Trending
   {
+  slug: "pralhad-joshi-takes-charge-education-ministry-nta-reforms-2026",
+  category: "News & Trending",
+  title: "Pralhad Joshi Takes Charge of Education Ministry: NTA Overhaul & Examination Integrity in Focus",
+  excerpt: "Following Dharmendra Pradhan's resignation amid student agitations, Cabinet Minister Pralhad Joshi steps in to lead the Ministry of Education. Here is a breakdown of immediate priorities, NTA restructuring, and anti-paper leak enforcement.",
+  date: "July 26, 2026",
+  readTime: "6 min read",
+  isFeatured: true,
+  author: {
+    name: "Aarav Deshmukh",
+    role: "Policy & Civil Affairs Analyst",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
+  },
+  coverImage: "https://www.mha.gov.in/sites/default/files/CR5_0381.JPG.jpeg",
+  ogImage: "https://www.mha.gov.in/sites/default/files/CR5_0381.JPG.jpeg",
+  seo: {
+    title: "Pralhad Joshi New Education Minister 2026: NTA Reforms & Exam Laws",
+    description: "Detailed report on Union Minister Pralhad Joshi taking charge of the Education Ministry, NTA restructuring, and new testing standards.",
+    keywords: ["Pralhad Joshi Education Minister", "NTA Reforms", "Education Ministry Update", "NEET Reforms", "Anti Paper Leak Act"]
+  },
+  toc: [
+    { id: "leadership-transition", title: "1. Leadership Transition at Kartavya Bhavan" },
+    { id: "key-portfolios", title: "2. Portfolio Allocation & Key Responsibilities" },
+    { id: "immediate-priorities", title: "3. Immediate Priorities: NTA Overhaul & CBT Transition" },
+    { id: "student-trust", title: "4. Restoring Public & Candidate Confidence" }
+  ],
+  contentSections: [
+    {
+      id: "leadership-transition",
+      type: "paragraph",
+      text: "In a swift administrative transition, Union Cabinet Minister Pralhad Joshi has officially assumed charge of the Ministry of Education. The portfolio reassignment comes after Dharmendra Pradhan stepped down from his position. President Droupadi Murmu, upon the advice of Prime Minister Narendra Modi, accepted the resignation and directed Minister Joshi to take on the additional charge."
+    },
+    {
+      id: "key-portfolios",
+      type: "heading",
+      heading: "2. Portfolio Allocation & Key Responsibilities"
+    },
+    {
+      type: "paragraph",
+      text: "A five-time Member of Parliament from Dharwad, Karnataka, Pralhad Joshi currently holds key portfolios including Consumer Affairs, Food and Public Distribution, as well as New and Renewable Energy. In his opening address upon taking office at Kartavya Bhavan, Joshi stated that he accepts this crucial responsibility with 'a sense of duty and humility' to strengthen the nation's academic ecosystem under the guidance of PM Modi."
+    },
+    {
+      type: "image",
+      url: "https://media.gettyimages.com/id/2286268649/photo/activists-and-supporters-of-the-cockroach-janta-party-clash-with-police-personnel-during-a.jpg?s=612x612&w=0&k=20&c=hbP_ONFv7JQCU5QI8LFXdhcyJW7BtTlRJbSgTvrl2DM=",
+      caption: "Ministry of Education review meeting assessing examination reforms and institutional frameworks"
+    },
+    {
+      id: "immediate-priorities",
+      type: "heading",
+      heading: "3. Immediate Priorities: NTA Overhaul & CBT Transition"
+    },
+    {
+      type: "paragraph",
+      text: "The primary task before the newly appointed Education Minister is the comprehensive structural reform of the National Testing Agency (NTA). Key agenda items include strict enforcement of the Public Examinations (Prevention of Unfair Means) Act, transitioning major entrance evaluations toward secured Computer-Based Testing (CBT) models, and establishing independent auditing bodies for exam centers nation-wide."
+    },
+    {
+      id: "student-trust",
+      type: "heading",
+      heading: "4. Restoring Public & Candidate Confidence"
+    },
+    {
+      type: "paragraph",
+      text: "With high-level review meetings already underway alongside Minister of State Jayant Chaudhary and senior department secretaries, the ministry aims to restore complete transparency for millions of competitive exam aspirants across the country."
+    }
+  ]
+}
+  ,{
   slug: "jantar-mantar-protests-anti-paper-leak-law-reforms-2026",
   category: "News & Trending",
   title: "Inside the Jantar Mantar Agitation: National Youth Protests & The Push for Examination Transparency",
