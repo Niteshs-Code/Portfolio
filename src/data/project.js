@@ -23,7 +23,7 @@ const projects = [
   },
    {
     title: "Fitness & Gym Center",
-    image: "/projects/gym.png",
+    image: "/projects/Gym.png",
     short: "High-energy gym and fitness center website.",
     details:
       "A fitness website offering workout membership plans, personal trainer showcases, facility gallery, and fitness program details.",
@@ -57,7 +57,7 @@ const projects = [
   },
   {
     title: "Dance Academy & Classes",
-    image: "/projects/dance.png",
+    image: "/projects/Dance.png",
     short: "Interactive website for dance studio and workshops.",
     details:
       "A vibrant platform for a dance academy showcasing dance forms, instructor profiles, class schedules, and workshop registrations.",
@@ -112,7 +112,7 @@ const projects = [
   
   {
     title: "Hair Salon & Barber Shop",
-    image: "/projects/hair.png",
+    image: "/projects/Hair.png",
     short: "Stylish hair grooming and styling salon portal.",
     details:
       "A modern hair salon web application highlighting hair styling services, grooming packages, haircut catalogs, and direct contact options.",
