@@ -12,6 +12,104 @@ const projects = [
   },
 
   {
+    title: "Beauty Parlour Website",
+    image: "/projects/beauty.png",
+    short: "Elegant salon and beauty parlour booking website.",
+    details:
+      "A responsive website designed for beauty parlours and salons featuring service listings, price lists, appointment booking interfaces, and client testimonials.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/Beauty-parlour/"
+  },
+   {
+    title: "Fitness & Gym Center",
+    image: "/projects/gym.png",
+    short: "High-energy gym and fitness center website.",
+    details:
+      "A fitness website offering workout membership plans, personal trainer showcases, facility gallery, and fitness program details.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/Gym-website/"
+  },
+
+  {
+    title: "Spa & Wellness Store",
+    image: "/projects/spa.png",
+    short: "Tranquil luxury spa and wellness care website.",
+    details:
+      "A serene spa website showcasing relaxing therapy packages, massage treatments, wellness products, and online reservation options.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/spa-store/"
+  },
+
+
+
+  {
+    title: "Clothing Store",
+    image: "/projects/clothe.png",
+    short: "Modern fashion and apparel e-commerce store.",
+    details:
+      "An online clothing store website displaying fashion catalogs, category filtering, trending collections, and a clean shopping interface.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/clothe-store/"
+  },
+  {
+    title: "Dance Academy & Classes",
+    image: "/projects/dance.png",
+    short: "Interactive website for dance studio and workshops.",
+    details:
+      "A vibrant platform for a dance academy showcasing dance forms, instructor profiles, class schedules, and workshop registrations.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/dance-class/"
+  },
+  
+  {
+    title: "Dental Clinic Website",
+    image: "/projects/dentist.png",
+    short: "Professional dental care clinic landing page.",
+    details:
+      "A clean healthcare web template for dental clinics featuring dental treatments overview, doctor credentials, patient reviews, and consultation booking.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/dentist-store/"
+  },
+  {
+    title: "Food Stall & Fast Food",
+    image: "/projects/food.png",
+    short: "Delicious fast food & street food outlet showcase.",
+    details:
+      "An engaging website for food stalls and eateries featuring digital menu cards, popular dish highlights, location details, and special offers.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/food-stall/"
+  },
+  
+  {
+    title: "Hair Salon & Barber Shop",
+    image: "/projects/hair.png",
+    short: "Stylish hair grooming and styling salon portal.",
+    details:
+      "A modern hair salon web application highlighting hair styling services, grooming packages, haircut catalogs, and direct contact options.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/Hair-saloon/"
+  },
+  
+  {
+    title: "Yoga & Meditation Center",
+    image: "/projects/yoga.png",
+    short: "Peaceful yoga practice and mindfulness portal.",
+    details:
+      "A holistic yoga and meditation website detailing daily session timings, yoga retreats, trainer profiles, and wellness blog articles.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/yoga-center/"
+  },
+
+  {
     title: "Weather App",
     image: "/projects/weather.png",
     short:
@@ -35,29 +133,7 @@ const projects = [
     live: "https://movie-app-cyan-eta.vercel.app/"
   },
 
-  {
-    title: "Recipe App",
-    image: "/projects/recipe.png",
-    short:
-      "Food search app with recipe videos.",
-    details:
-      "Recipe finder built with HTML, CSS and JavaScript. Users can search meals and also watch YouTube cooking tutorials for each recipe.",
-    tech: "HTML, CSS, JavaScript",
-    github: "https://github.com/Niteshs-Code/recipeapp",
-    live: "https://niteshs-code.github.io/recipeapp/"
-  },
-
-  {
-    title: "Blinkit Clone",
-    image: "/projects/blinkit.png",
-    short:
-      "E-commerce grocery application clone.",
-    details:
-      "Blinkit style grocery app with product listing, cart functionality and responsive UI. Built using React with Context API and dummy API data.",
-    tech: "React, Context API, Tailwind",
-    github: "https://github.com/Niteshs-Code/blinkit",
-    live: "https://blinkit-kohl.vercel.app/"
-  }
+  
 ];
 
 export default projects;
