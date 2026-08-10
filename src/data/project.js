@@ -65,7 +65,30 @@ const projects = [
     github: "https://github.com/Niteshs-Code",
     live: "https://niteshs-code.github.io/dance-class/"
   },
-  
+
+  {
+    title: "Recipe App",
+    image: "/projects/recipe.png",
+    short:
+      "Food search app with recipe videos.",
+    details:
+      "Recipe finder built with HTML, CSS and JavaScript. Users can search meals and also watch YouTube cooking tutorials for each recipe.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code/recipeapp",
+    live: "https://niteshs-code.github.io/recipeapp/"
+  },
+
+  {
+    title: "Blinkit Clone",
+    image: "/projects/blinkit.png",
+    short:
+      "E-commerce grocery application clone.",
+    details:
+      "Blinkit style grocery app with product listing, cart functionality and responsive UI. Built using React with Context API and dummy API data.",
+    tech: "React, Context API, Tailwind",
+    github: "https://github.com/Niteshs-Code/blinkit",
+    live: "https://blinkit-kohl.vercel.app/"
+  },
   {
     title: "Dental Clinic Website",
     image: "/projects/dentist.png",
