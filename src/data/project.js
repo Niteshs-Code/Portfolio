@@ -100,6 +100,56 @@ const projects = [
     live: "https://niteshs-code.github.io/dentist-store/"
   },
   {
+    title: "Cafe Store Website",
+    image: "/projects/cafe.png",
+    short: "Modern cafe and coffee shop landing page.",
+    details:
+      "An attractive web template for cafes and coffee shops, showcasing menu items, special brews, ambiance gallery, customer testimonials, and online table reservations.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/cafe-store/"
+  },
+  {
+    title: "Photo Studio Website",
+    image: "/projects/photo.png",
+    short: "Creative photography studio portfolio.",
+    details:
+      "A sleek portfolio web template for photographers and studios featuring high-resolution photo galleries, photography packages, client reviews, and booking inquiries.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/photo-studio/"
+  },
+  {
+    title: "Library Store Website",
+    image: "/projects/library.png",
+    short: "Digital library and bookstore web portal.",
+    details:
+      "A structured platform for book lovers and libraries, displaying featured books, genre categories, membership plans, author spotlights, and book search features.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/library-store/"
+  },
+  {
+    title: "Fight Academy Website",
+    image: "/projects/fight.png",
+    short: "Action-packed martial arts and combat academy site.",
+    details:
+      "A dynamic healthcare/fitness template for combat sports and martial arts academies, featuring training programs, coach profiles, class schedules, and trial session signups.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/fight-academy/"
+  },
+  {
+    title: "Bakery Shop Website",
+    image: "/projects/bakery.png",
+    short: "Delightful bakery and confectionery store website.",
+    details:
+      "A charming website template for artisan bakeries and cake shops showcasing fresh baked goods, custom cake ordering, daily specials, and contact details.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/bakery-shop/"
+  },
+  {
     title: "Food Stall & Fast Food",
     image: "/projects/food.png",
     short: "Delicious fast food & street food outlet showcase.",
