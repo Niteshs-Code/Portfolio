@@ -110,6 +110,16 @@ const projects = [
     live: "https://niteshs-code.github.io/cafe-store/"
   },
   {
+    title: "Consultancy Services Website",
+    image: "/projects/consultancy.png",
+    short: "Professional business consultancy landing page.",
+    details:
+      "A modern business consultancy website template featuring strategic consulting services, expert team profiles, client case studies, and appointment booking options.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/consultancy-site/"
+  },
+  {
     title: "Photo Studio Website",
     image: "/projects/photo.png",
     short: "Creative photography studio portfolio.",
