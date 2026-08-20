@@ -191,6 +191,66 @@ const projects = [
     github: "https://github.com/Niteshs-Code",
     live: "https://niteshs-code.github.io/yoga-center/"
   },
+  {
+    title: "Eyewear & Glasses Store",
+    image: "/projects/glasses.png",
+    short: "Stylish eyewear and optical shop landing page.",
+    details:
+      "A sleek e-commerce template for eyewear stores showcasing sunglasses, prescription glasses, frame collections, virtual try-on features, and customer reviews.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/glasses-store/"
+  },
+  {
+    title: "Commercial Kitchen Solutions",
+    image: "/projects/comercial.png",
+    short: "Professional commercial kitchen equipment website.",
+    details:
+      "A heavy-duty industrial web template for commercial kitchen equipment suppliers, featuring heavy appliance catalogs, kitchen layout designs, service inquiries, and client testimonials.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/comercial-kitchen/"
+  },
+  {
+    title: "Corporate Consultant Agency",
+    image: "/projects/consultant.png",
+    short: "Professional business strategy and advisory platform.",
+    details:
+      "A sophisticated advisory template designed for corporate consultants, featuring strategic service offerings, industry insights, success stories, and seamless client consultation scheduling.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/consultant-site/"
+  },
+  {
+    title: "Hardware Tools & Supplies Shop",
+    image: "/projects/hardware.png",
+    short: "Comprehensive hardware store and tool catalog website.",
+    details:
+      "A robust web template for hardware and construction tool shops, featuring organized product categories, tool specifications, bulk order inquiries, and store location information.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/hardware-shop/"
+  },
+  {
+    title: "Electric Appliances & Supplies Shop",
+    image: "/projects/electric.png",
+    short: "Modern electrical equipment and store showcase.",
+    details:
+      "A high-powered retail template for electrical components, appliances, and wiring supplies, complete with featured safety equipment, brand showcases, and customer support channels.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/electirc-shop/"
+  },
+  {
+    title: "Premium Speaker & Audio Store",
+    image: "/projects/speaker.png",
+    short: "High-end sound system and speaker online store.",
+    details:
+      "An immersive audio product landing page featuring high-fidelity wireless speakers, soundbar specs, acoustic features overview, and instant buy options for music enthusiasts.",
+    tech: "HTML, CSS, JavaScript",
+    github: "https://github.com/Niteshs-Code",
+    live: "https://niteshs-code.github.io/speaker-store/"
+  },
 
   {
     title: "Weather App",
